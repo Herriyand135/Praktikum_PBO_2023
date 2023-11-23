@@ -1,0 +1,17 @@
+package praktikum5;
+
+public abstract class Hewan {
+	protected static String name;
+	protected abstract void eat();
+	
+
+}
+class Cat extends Hewan {
+	public Cat(String namacat) {
+		Cat.name = namacat;
+	}
+	public void eat() {
+		System.out.println(Cat.name + "Makan Wishkas");
+	}
+}
+

@@ -1,0 +1,9 @@
+package praktikum5;
+
+public class Test {
+	public static void main(String [] args) {
+		Cat kucing = new Cat("Shally");
+		System.out.println("Kucing "+kucing.name+" ada di rumah");
+		kucing.eat();
+	}
+}

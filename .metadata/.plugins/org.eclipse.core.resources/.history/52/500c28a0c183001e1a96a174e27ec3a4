@@ -1,0 +1,51 @@
+package Praktikum_PBO;
+import java.util.Scanner;
+public class Perulangan extends Perkalian {
+
+    public static void main(String[] args) {
+        int angka1;
+        int loop;
+        Scanner input1 = new Scanner(System.in);
+        Scanner loop_input = new Scanner(System.in);
+
+        // Data diri
+        System.out.print("nama : herriyandi Nugroho\n");
+        System.out.print("kelas : Reg D\n");
+        System.out.print("prodi : Teknik Informatika\n");
+        System.out.print("=================\n ");
+        System.out.print("\n");
+
+        System.out.print("masukan perulangan : ");
+        loop = loop_input.nextInt();
+
+        // looping function
+        for (int i = 1; i <= loop; i++) {
+            // input user
+            System.out.print("masukan perhitungan yang ingin dilakukan : \n"
+                    + "1. perkalian\n"
+                    + "2. pembagian\n"
+                    + "3. penambahan\n"
+                    + "4. pengurangan\n"
+                    + "masukan angka : ");
+            angka1 = input1.nextInt();
+
+            // PENGKONDISIAN
+            if (angka1 == 1) {
+                Perulangan perulangan = new Perulangan();
+                perulangan.Perkalian();
+            } else if (angka1 == 2) {
+                Perulangan perulangan = new Perulangan();
+                perulangan.Pembagian();
+            } else if (angka1 == 3) {
+                Perulangan perulangan = new Perulangan();
+                perulangan.Penambahan();
+            } else if (angka1 == 4) {
+                Perulangan perulangan = new Perulangan();
+                perulangan.Pengurangan();
+            } else {
+                System.out.println("angka yang anda masukan salah");
+            }
+        }
+    }
+}
+
